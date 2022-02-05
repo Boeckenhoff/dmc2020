@@ -18,7 +18,6 @@ class FeatureGenerator():
         return pd.merge(df_item_per_biweek, df[['itemID', 'percentile_order_count']], on='itemID')
 
     def one_hot_encoding(self, df_item_per_biweek, column):
-
         return pd.get_dummies(df_item_per_biweek, columns=column)
 
     def create_features_to_lag(self, df_item_per_biweek, features, lags):
