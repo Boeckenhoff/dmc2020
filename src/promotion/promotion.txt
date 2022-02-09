@@ -1,0 +1,8 @@
+Das Feature Promotion markiert Verkaufspeaks anhand des zeitlichen Abstandes der Transaktionen und der prozentualen Verkaufszahlen. 
+Eine Deklaration als Promotion erfolgt, falls der gemittelte Abstand der Transaktionen (Median) kleiner 0,1 h ist und mindestens 1% der Produkte in diesem Zeitraum gekauft werden.
+featurePromotion.R: R-Code zur Bestimmung der Promotion
+
+Dateien:
+ordersPromotion.RData: order Datei im long-Format mit dem feature Promotion 
+promotionList.RData: Liste mit Promotionsdaten  
+promotion.csv: csv-Datei im long-Format mit Spalten itemID, date, promotion 
